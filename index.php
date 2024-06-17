@@ -5,11 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bad Words Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>
-    <form action="filter.php" method="GET">
-        <textarea name="textbox" id="textbox"></textarea>
-        <button>Invia</button>
-    </form>
+<body class="bg-dark">
+    <div class="container">
+        <div class="flex-row  justify-content-center ">
+        <div class="col-6 position-absolute top-50 start-50 translate-middle">
+            <form action="filter.php" method="GET">
+                <div class="input-group">
+                    <textarea name="textbox" class="form-control" aria-label="With textarea"></textarea>
+                    <button class="btn btn-success">Invia</button>
+                </div>
+            </form>
+        </div>
+            
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
