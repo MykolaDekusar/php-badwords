@@ -14,6 +14,7 @@
             <form action="filter.php" method="GET">
                 <div class="input-group">
                     <textarea name="textbox" class="form-control" aria-label="With textarea"></textarea>
+                    <input type="text" name="censura" placeholder="Parola da censurare">
                     <button class="btn btn-success">Invia</button>
                 </div>
             </form>

@@ -1,7 +1,7 @@
 <?php
 $frase = $_GET['textbox'];
-$filtro = "stronzo";
-$filtered = str_replace($filtro, '***', $frase);
+$filtro = $_GET['censura'];
+$filtered = str_ireplace($filtro, '***', $frase);
 ?>
 
 <!DOCTYPE html>
@@ -16,9 +16,9 @@ $filtered = str_replace($filtro, '***', $frase);
     <div class="container">
         <div class="row d-flex justify-content-center text-center position-absolute top-50 start-50 translate-middle">
             <div ><h2 class="mb-5 text-info">Ecco il tuo testo non censurato:</h2></div>
-            <div class="mb-5"><h4><?php echo $frase ?> <br class="mb-3"> ed è lungo : <span class="text-danger"><?php echo strlen ($frase) ?></span> caratteri</h4></div>
+            <div class="mb-5"><h4><?php echo $frase; ?> <br class="mb-3"> ed è lungo : <span class="text-danger"><?php echo strlen ($frase); ?></span> caratteri</h4></div>
             <div ><h2 class="text-info">Ecco il tuo testo censurato:</h2></div>
-            <div ><h4><?php echo $filtered ?> <br class="mb-3"> ed è lungo : <span class="text-danger"><?php echo strlen ($filtered) ?></span>  caratteri</h4></div>
+            <div ><h4><?php echo $filtered; ?> <br class="mb-3"> ed è lungo : <span class="text-danger"><?php echo strlen ($filtered); ?></span>  caratteri</h4></div>
         </div>
     </div>
     
